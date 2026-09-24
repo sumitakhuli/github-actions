@@ -2,8 +2,9 @@ name: Hello GitHub Actions
 on:
   push:
     branches:
-      -main
-      -feature/*
+      - main
+      - 'feature/*'
+  workflow_dispatch:
 jobs:
   hello:
     runs-on: ubuntu-latest
